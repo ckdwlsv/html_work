@@ -1,0 +1,122 @@
+front
+html 리액트
+VS code (visual studio)
+설치할 때 특별히 변경해야할 요소는 없음
+
+inteliJ와는 달리 폴더만 만들고 그걸 열면 그게 프로젝트다(?)
+
+html은 웹 페이지의 뼈대, CSS는 세부 조정
+html, css, javascript => 정적인 파일
+
+
+VS code => 웹 편집 & 수정
+file - open folder - 폴더 들어가서 select folder
+
+file에서 autosave 켜기
+기본 구조 만들기
+! + enter
+
+=======================================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+=======================================================
+<> : 여는 태그
+</> : 닫는 태그
+
+html 안에 head와 body가 들어감
+head는 메타 데이터(부수적인 데이터) title은 탭 이름
+body는 실제로 보이게 되는 페이지
+
+h1~6 쓰고 엔터 치면 
+<h1></h1> 생성됨. (헤더)
+
+
+extensions -> Prettier - Code formatter, Auto Rename Tag,  Live Server 설치
+prettier는 글자 예쁘게
+auto rename tag는 태그 한쪽만 바꾸면 다른 쪽도 연동되서 바꾸도록
+live server는 코드바꾼게 저장되는 순간 자동으로 웹페이지에 반영되도록 하는 extension
+
+site.com/ 뒤에 robots.txt 넣어서 엔터치면 크롤링 허용 여부 알 수 있음
+
+=======================================================
+JSON(JavaScript Object Notation)
+
+DOM(Document Object Model)
+웹 페이지가 하나의 Document
+
+<!DOCTYPE html> <- html 타입을 준수하고 있다는 뜻
+<html> <- 부모 태그
+  --<head> <- 자식 태그
+  --<body> <- 자식 태그
+=======================================================
+설정 변경 (ctrl + shift + p -> settings 검색, open user settings (JSON) 들어가기)
+
+    "emmet.variables": {
+        "lang": "ko"
+    },
+    "editor.tabSize": 2,
+    "explorer.confirmDelete": false
+
+입력
+=======================================================
+li enter -> li 태그
+li * 3 enter -> 3개 주르륵 생성
+alt 누르고 여러곳에 동시에 커서 생성 가능 동시 입력 가능, esc로 탈출
+
+ul(unordered list)
+ol(ordered list)
+
+.이름 엔터 : 클래스 생성 (중복 가능)
+#이름 엔터 : ID 생성 (중복 불가)
+
+ol li : ol 밑의 모든 자식에게 영향
+ol>li : ol의 직계 자식에게만 영향 - 단 색깔 등 몇몇개는 직계 너머 모든 자식에게 상속됨
+
+주석 달기
+<!--
+
+border : 테두리 선
+padding : 테두리와 내용 사이의 공간
+margin : 컨텐츠 사이의 공간
+
+유저입력
+inputbox
+checkbox
+combobox
+listbox
+button
+
+포커싱 focus
+포커스 해제 blur
+
+
+CSS 선택자
+-태그: 현재 페이지 모든 같은 태그
+* : 모든 것
+li
+ul li : ul 태그 밑의 모든 li
+ul > li : ul 태그 밑의 직계
+ol, ul : ol과 ul 전체
+h1 + p : h1 태그 바로 다음 거 하나
+h1 ~ p : h1 아래의 모든 형제
+input[type = "text"] : input 중 타입이 텍스트박스인것
+a[href] 링크 만드는 태그
+
+
+HTML 요소
+- 인라인 요소(inline) : 자기 크기만 고집 ex) img, <span>
+- 블럭 요소(block) : 한 행 전체를 고집 ex) H1~H6, <div>
+
+
+Lorem ipsum extension
+더미텍스트 생성해주는 툴
+사용법 lorem 엔터

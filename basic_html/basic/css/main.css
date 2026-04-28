@@ -1,0 +1,16 @@
+li {
+  color: red;
+}
+h2 {
+  color: brown;
+}
+h3 {
+  color: gold;
+}
+.other {
+  text-decoration: underline;
+}
+#select {
+  font-size: 30px;
+  color: blueviolet;
+}

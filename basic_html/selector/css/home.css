@@ -1,0 +1,13 @@
+/* ul 태그 밑의 li 모두 */
+ul li{
+  color: tomato;
+}
+
+.beverage > li{
+  border: solid 1px skyblue;
+  color: gold;
+}
+
+.beverage2 li {
+  color: green
+}
