@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      width: 1500px;
+    }
+    header {
+      border-bottom: 1px solid gray;
+    }
+    footer {
+      border-top: 1px solid gray;
+    }
+    nav{
+      border-right: 1px solid gray;
+    }
+    aside{
+      border-left: 1px solid gray;
+    }
+    nav, aside {
+      /*너비 고정*/
+      flex-basis: 150px;
+      /*다른 놈 희생*/
+      flex-shrink: 0;
+    }
+    .content {
+      display:  flex;
+    }
+    main {
+      text-align: justify;
+      padding: 10px;
+      column-count: 4;
+      column-width: 200px;
+      column-gap: 20px;
+      column-rule-color: red;
+      column-rule-style: solid;
+      column-rule-width: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Holy Grail Layout</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>main</li>
+          <li>about</li>
+          <li>help</li>
+        </ul>
+      </nav>
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis praesentium harum rerum eius. Omnis asperiores ducimus blanditiis, sed, ab porro molestias non ullam sunt magni excepturi id tenetur explicabo quos.
+          Obcaecati veniam tempora nobis quidem? Aspernatur, itaque minima eveniet, eius aperiam, doloremque perspiciatis rerum unde iusto commodi laudantium consectetur consequuntur ipsum nostrum tempora hic temporibus molestiae modi possimus numquam. Non.
+          Aperiam, exercitationem illum. Rem voluptatum harum earum impedit a voluptatibus rerum, ut cupiditate id repudiandae, quaerat, sed delectus sapiente quam libero illum veniam dolorem necessitatibus accusamus recusandae quas animi consequatur?
+          Consequuntur iure obcaecati aut aliquid id cum repellat in doloribus esse quibusdam! Maxime distinctio qui veniam fuga vero. Tempora et, nulla quos optio illum iusto dicta adipisci dolorem obcaecati quas.
+          Fugit aliquid iure atque. Qui fuga eos reiciendis nesciunt porro ab, facilis illo expedita culpa. Ipsum ea id quam nulla et, facere obcaecati, distinctio totam at qui quas ipsam harum?
+          Dignissimos ab architecto fugit exercitationem, quibusdam itaque quod saepe nulla voluptates quia nisi in. Quod rem molestiae, quasi totam recusandae ea perspiciatis praesentium pariatur molestias blanditiis, quidem sunt, temporibus dolore.
+          Eligendi perferendis sed blanditiis fugit officia dolorum deleniti eos! Magnam, ducimus ratione vel, omnis vitae vero esse ad repellendus molestias neque illo eius error nesciunt ipsam dolorum commodi odit voluptatem!
+          Natus dolorum placeat excepturi optio quo dolore magni sit blanditiis, aut enim non obcaecati, officiis error delectus reprehenderit est, ullam necessitatibus in animi quod sapiente nulla illum. Eos, laudantium assumenda.
+          Libero dolorem ea a id porro ut assumenda, nobis dolorum sunt deserunt nam illo. Perferendis iste necessitatibus, impedit voluptatibus magni, soluta, consequuntur distinctio accusantium enim amet quas. Quas, minus a.
+          Blanditiis ut unde quo labore earum minus iusto, tenetur quae! Fuga repellat eaque consectetur aspernatur recusandae nihil ipsa non, voluptatum doloremque, saepe unde, ut deleniti enim ex libero aut cumque.
+        </p>
+      </main>
+      <aside>
+        AD (광고)
+      </aside>
+    </section>
+    <footer>
+      <a href="www.naver.com">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>
