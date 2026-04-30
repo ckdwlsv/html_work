@@ -1,0 +1,30 @@
+.container {
+  width: 600px;
+  margin: 10px auto;
+}
+
+#line {
+  border: 0;
+  height: 50px;
+  border-bottom: 1px solid #999;
+}
+
+div {
+  padding: 5px 10px 5px 10px;
+}
+
+.presonal div {
+  margin-left: 20px;
+}
+
+.field div {
+  margin-left: 20px;
+}
+
+li {
+  display: flex;
+}
+
+.buttons input:hover {
+  background-color: bisque;
+}

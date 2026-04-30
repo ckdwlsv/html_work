@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/fron_end.css">
+  <title>Fron-end지원서</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <Fieldset>
+        <h1>프론트엔드 개발자 지원서</h1>
+        <p id="line">HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+        <div class="presonal">
+          <p>개인정보</p>
+            <div>
+              <label>이름</label>
+              <input type="text" placeholder="공백없이 입력하세요.">
+            </div>
+            <div>
+              <label>연락처</label>
+              <input type="text">
+            </div>
+        </div>
+        <div class="field">
+          <p>지원분야</p>
+            <div>
+              <li>
+                <input type="radio"/>
+                <label>웹 퍼블리싱</label>
+              </li>
+              <li>
+                <input type="radio"/>
+                <label>웹 애플리케이션 개발</label>
+              </li>
+              <li>
+                <input type="radio"/>
+                <label>개발 환경 개선</label>
+              </li>
+            </div>
+        </div>
+        <div class="reason">
+          <p>지원동기</p>
+          <textarea name="memo" id="memo" cols="100" rows="8" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+        </div>
+        <div class="buttons">
+          <input type="button" value="접수하기">
+          <input type="button" value="다시쓰기">
+        </div>
+      </Fieldset>
+    </form>
+  </div>
+</body>
+</html>
